@@ -3,14 +3,15 @@ package br.com.fiap.pizzaria.model;
 import java.math.BigDecimal;
 
 public class Cardapio {
- 
+
+    private static BigDecimal iD;
     public String Nome;
 
-    public Enum Tamanho;
+    public static Enum Tamanho;
 
     public BigDecimal Preco;
 
-    public BigDecimal ID;
+    public static BigDecimal ID;
 
     public String getNome() {
         return Nome;
@@ -24,7 +25,7 @@ public class Cardapio {
         return Tamanho;
     }
 
-    public void setTamanho(Enum tamanho) {
+    public static void setTamanho(Enum tamanho) {
         Tamanho = tamanho;
     }
 
@@ -40,9 +41,10 @@ public class Cardapio {
         return ID;
     }
 
-    public void setID(BigDecimal iD) {
+    public static void setID(BigDecimal id) {
         ID = iD;
     }
+
 
 
 }
